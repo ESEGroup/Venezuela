@@ -1,0 +1,9 @@
+{% if ultimas_ocorrencias %}
+	<ul>
+	{% for ocorrencia in ultimas_ocorrencias %}
+		<li> <a href="/cadastro/{{ocorrencia.id}}/">{{ocorrencia.tipo_ocorrencia}}</a></li>
+	{% endfor %}
+	</ul>
+{% else %}
+	<p>nao há nenhuma ocorrencia.</p>
+{% endif %}
