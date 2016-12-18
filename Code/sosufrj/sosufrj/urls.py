@@ -17,6 +17,10 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^busca/', include('busca.urls')),
+    url(r'^ocorrencia/', include('ocorrencia.urls')),
     url(r'^cadastro/',include('cadastro.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^$', include('home.urls')),
+
 ]
