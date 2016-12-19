@@ -6,20 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE-edge">
   <meta name="description" content="Cadastro de ocorrência de segurança da UFRJ">
   <meta name="keywords" content="UFRJ, violência, segurança, SOS UFRJ">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
   <title>Cadastro de Ocorrência de Segurança da UFRJ</title>
-  <link rel="stylesheet" href="style.css">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
 <body>
 
-  <a href="home.html"><img class="logo" src="logo.jpeg" alt="Logo"></a>
+  <a href=""><img alt="django" src="media/logo.jpeg" width="80px" height"30px"></a>
 
   <h1>Cadastro de Ocorrência de Segurança da UFRJ</h1>
-  
+
   <div id="formDiv">
-  
+
   <form>
-  
+
     CPF:
 	<input type="text" name="cpf" maxlength="14" placeholder="___.___.___-__">
 	<br><br>
@@ -44,7 +47,7 @@
 	  <option value=16>Vandalismo</option>
 	</select>
 	<br><br>
-	
+
     Local:
 	<select name="local">
 	  <option value=1>Centro de Ciências da Saúde (CCS)</option>
@@ -89,7 +92,7 @@
 	<textarea name="descricao" rows="6">
 	</textarea>
 	<br><br>
-	
+
 	<input type="submit" value="Enviar">
 
   </form>

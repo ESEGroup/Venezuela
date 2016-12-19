@@ -14,7 +14,10 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+ROOTDIR = os.path.dirname(__file__)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(ROOTDIR,'media')
+ADMIN_MEDIA_PREFIX = '/admin_media/'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
@@ -24,7 +27,7 @@ SECRET_KEY = '4teafedsb5q^7@63c-x&n6&s332oy@^6byl*3yxuy2ds)w6#-t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+TEMPLATE_DEBUG = DEBUG
 ALLOWED_HOSTS = []
 
 
