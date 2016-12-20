@@ -2,9 +2,10 @@ from django.db import models
 
 class Usuario(models.Model):
     def __str__(self):
-        return (self.nome_usuario)
-    nome_usuario = models.CharField(max_length=50)
-    idade_usuario = models.IntegerField(default=18)
+        return (self.cpf_usuario)
+    #nome_usuario = models.CharField(max_length=50)
+    #idade_usuario = models.IntegerField(default=18)
+    cpf_usuario = models.CharField(max_length=12)
 
 class Ocorrencia(models.Model):
     def __str__(self):
